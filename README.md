@@ -1,4 +1,4 @@
-# Luna Lunita Muebleria - React Application
+# Luna Lunita Muebleria - Aplicación React
 
 Una aplicación de comercio electrónico diseñada para la venta de **sillas** y **mesas infantiles**. Ofrece una experiencia sencilla y funcional para los usuarios.
 
@@ -30,6 +30,6 @@ Este proyecto utiliza **React** como framework principal, junto con las siguient
 
 1. Clona el repositorio:
    ```bash
-   git clone <URL-del-repositorio>
-   cd commerce-infantil
+   git clone https://github.com/jlpach/lunalunitamuebleria.git
+   cd linalunitamuebleria
    ```
