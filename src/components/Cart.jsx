@@ -1,9 +1,9 @@
 import { useCart } from "../context/CartContext"
-import { Card, Container } from "react-bootstrap"
+import { Card, Container, Button } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
 function Cart () {
-    const { cart, getTotal } = useCart()
+    const { cart, getTotal, removeCartItem } = useCart()
 
     return (
         <Container fluid className="justify-content-center mt-5 col-lg-8 col-md-8 col-10">
@@ -22,10 +22,16 @@ function Cart () {
                             <Card.Text>
                                 Cantidad: {prod.qty}
                             </Card.Text>
+                            <Button variant="outline-primary" onClick={() => {
+                                removeCartItem(prod.id)
+                                }}>
+                                Eliminar producto
+                            </Button>
                         </Card.Body>    
                     </Card>
                 </div>
             ))}
+
             <div className="mt-5">
                 <h5>Total: {getTotal()}</h5>
                 <Link to="/CheckoutForm" type="button" className="btn btn-primary position-relative mt-3 mb-5">Completar la compra</Link>
