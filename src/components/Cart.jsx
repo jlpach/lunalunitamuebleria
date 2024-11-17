@@ -1,4 +1,4 @@
-import { useCart } from "../context/CartContext"
+import { useCart } from "../context/cartContext"
 import { Card, Container, Button } from "react-bootstrap"
 import { Link } from "react-router-dom"
 

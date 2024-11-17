@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons/faCartShopping"
-import { useCart } from "../context/CartContext"
+import { useCart } from "../context/cartContext"
 import { Link } from "react-router-dom"
 
 export default function CartWidget() {

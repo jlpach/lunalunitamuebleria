@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { cartContext } from "./CartContext"
+import { cartContext } from "./cartContext"
 import { useState } from "react"
 
 function CartProvider({ children }) {

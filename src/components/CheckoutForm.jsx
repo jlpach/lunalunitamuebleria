@@ -1,4 +1,4 @@
-import { useCart } from "../context/CartContext"
+import { useCart } from "../context/cartContext"
 import { Form, Button, Container, Row } from "react-bootstrap"
 import { createOrder } from "../firebase/db"
 import { serverTimestamp } from "firebase/firestore"

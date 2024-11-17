@@ -3,7 +3,6 @@ import ItemList from "./ItemList"
 import { useParams } from "react-router-dom"
 import Loader from "./Loader"
 import { getItems, getCategoryItems } from "../firebase/db"
-//import { cartContext } from "../context/CartContext"
 
 function ItemListContainer() {
     const [items, setItems] = useState([])
