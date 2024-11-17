@@ -1,8 +1,8 @@
 import { getFirestore, collection, getDocs, query, where, doc, getDoc, addDoc } from "firebase/firestore"
 import { app } from "./config"
+import Swal from "sweetalert2"
 
 const db = getFirestore(app)
-
 
 export const getItems = async () => {
     const querySnapshot = await getDocs(collection(db, "items"))
@@ -42,8 +42,13 @@ export const getDetail = async (id) => {
 export const createOrder = async (order) => {
     try {
         const docRef = await addDoc(collection(db, "orders"), order)
-        console.log("Document written with ID: ", docRef.id)
+        return docRef.id
     } catch (e) {
-        console.error("Error adding document: ", e)
+        Swal.fire({
+            title: "¡Ups! Algo fallo",
+            text: "Por favor contacta al administrador de la pagina. \n" + e,
+            icon: "error"
+        })
+        return -1
     }
 }

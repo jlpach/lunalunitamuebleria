@@ -18,6 +18,7 @@ Este proyecto utiliza **React** como framework principal, junto con las siguient
 - **[React Router](https://reactrouter.com/)**: Manejo de rutas y navegación dentro de la aplicación.
 - **[FontAwesome](https://fontawesome.com/)**: Iconos visualmente atractivos para mejorar la experiencia del usuario.
 - **[React Spinners](https://www.npmjs.com/package/react-spinners)**: Indicadores de carga animados para mejorar la interacción con el usuario.
+- **[sweetalert2] (https://sweetalert2.github.io/#download)**: Replacement for JS popup boxes.
 
 ## Cómo Ejecutar el Proyecto
 
