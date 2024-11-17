@@ -13,8 +13,8 @@ function NavBar() {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link as={Link} to={'/category/furniture'}>Mesas</Nav.Link>
-                            <Nav.Link as={Link} to={'/category/groceries'}>Sillas</Nav.Link>
+                            <Nav.Link as={Link} to={'/category/Mesas'}>Mesas</Nav.Link>
+                            <Nav.Link as={Link} to={'/category/Sillas'}>Sillas</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                     <CartWidget />

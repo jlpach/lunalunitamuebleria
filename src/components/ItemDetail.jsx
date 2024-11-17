@@ -7,6 +7,7 @@ function ItemDetail({ detail }) {
         <>
             <Container className="mt-5 mb-5 d-flex justify-content-center align-items-center">
                 <Card style={{ width: '18rem' }}>
+                    <Card.Img variant="top" src={detail?.thumbnail} />
                     <Card.Body>
                         <Card.Title>{detail?.title}</Card.Title>
                         <Card.Subtitle className="mb-2 text-muted">{detail?.category}</Card.Subtitle>
@@ -19,7 +20,7 @@ function ItemDetail({ detail }) {
                         <Card.Text>
                             Disponibles: {detail?.stock}
                         </Card.Text>
-                        <ItemCount />
+                        <ItemCount detail={detail} />
                     </Card.Body>
                 </Card>
             </Container>

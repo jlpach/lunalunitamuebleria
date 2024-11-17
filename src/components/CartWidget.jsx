@@ -1,14 +1,17 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons/faCartShopping"
+import { useCart } from "../context/CartContext"
+import { Link } from "react-router-dom"
 
 export default function CartWidget() {
+    const { getQuantity } = useCart()
     return (
-        <button type="button" className="btn btn-primary position-relative">
+        <Link to='/cart' type="button" className="btn btn-primary position-relative">
             <FontAwesomeIcon icon={faCartShopping} />
             <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                2
+                {getQuantity()}
                 <span className="visually-hidden">unread messages</span>
             </span>
-        </button>
+        </Link>
     )
 }
