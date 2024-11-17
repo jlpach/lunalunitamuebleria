@@ -31,5 +31,5 @@ Este proyecto utiliza **React** como framework principal, junto con las siguient
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/jlpach/lunalunitamuebleria.git
-   cd linalunitamuebleria
+   cd lunalunitamuebleria
    ```
